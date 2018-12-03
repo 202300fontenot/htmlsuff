@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<style>
+a {
+    text-decoration: underline;
+}
+a:link, a:visited {
+    color: blue;
+}
+a:hover {
+    color: red;
+}
+
+
+marquee {
+font-size:70px;
+background-color:#62f442;
+}
+
+p {
+font-size:30px;
+}
+
+html {
+background-color:#000000;
+-webkit-animation: hue 60s infinite linear;
+}
+
+
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+}
+body {
+background-color:#62f442
+}
+
+</style>
+
+<title>Home</title>
+
+<marquee BEHAVIOR=alternate scrollamount="15" bgcolor="white" width="100%"><b><span id="clock"></span></b></marquee>
+
+
+<script>
+var myVar = setInterval(function() {
+  myTimer();
+}, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+
+<h4></h4>
+<form action="https://www.google.com/search" method="GET">
+	<input type="text" name="q" placeholder="Google Seach" autofocus>
+	<input type="submit" value="Google Search">
+</form>
+<p><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></p>
+
+<p><a href="https://moodle.catholichigh.org/login/index.php" target="_blank">Moodle</a></p>
+
+<p><a href="https://www.plusportals.com/CatholicHigh" target="_blank">PlusPortals</a></p>
+
+<p><a href="https://docs.google.com/document/u/0/?tgif=d" target="_blank">Google Docs</a></p>
+
+<p><a href="https://docs.google.com/presentation/u/0/?tgif=c" target="_blank">Google Slides</a></p>
+
+<p><a href="https://quizlet.com/latest" target="_blank">Quizlet</a></p>
+
+<p><a href="https://my.hrw.com/" target="_blank">My HRW</a></p>
+
+<p><a href="https://www.youtube.com" target="_blank">Youtube</a></p>
+
+<body></body>
+
+</head> 
+
+</html> 
